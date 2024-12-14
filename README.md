@@ -5,6 +5,8 @@ fisierele de acolo. La final, aceasta va afisa numarul de directoare si de fisie
 fiecarui tip de fisier (.zip, .exe etc.) atat ca numar cat si ca size. Toate aceste informatii vor fi
 afisate sub forma de charturi (pie chart, bar chart etc.) a.i. sa fie cat mai usor de intepretat.
 
-# INPUT analize_partition.py D
+# INPUT 
+analize_partition.py D
 
-# OUTPUT Chart
+# OUTPUT 
+Chart ce contine informatii statistice despre partitie
