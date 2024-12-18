@@ -29,6 +29,9 @@ def plot_chart(extension_size, extension_count):
         plt.show()
 
 def analyze_partition(partition):
+    if not os.path.exists(partition + ":\\"):
+        print(f"Error: The partition '{partition}' does not exist")
+        exit(1)
     extension_count = {}
     extension_size = {}
     total_files = 0
@@ -55,5 +58,8 @@ def analyze_partition(partition):
     plot_chart(extension_size, extension_count)
 
 if __name__ == "__main__":
+    if len(argv) < 2:
+        print("Error: Please provide a partition")
+        exit(0)
     partition = argv[1]
     analyze_partition(partition)
