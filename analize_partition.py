@@ -60,7 +60,7 @@ def analyze_partition(partition):
             file_extension = os.path.splitext(file)[1].lower()
             file_size = os.path.getsize(file_path)
             total_size += file_size
-            if(file_extension not in extension_count):
+            if file_extension not in extension_count:
                 extension_count[file_extension] = 1
                 extension_size[file_extension] = file_size
             else:
